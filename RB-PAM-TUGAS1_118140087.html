@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas Pengembangan Aplikasi Mobile</title>
+	<style type="text/css">
+		body{
+			font-family: Montserrat;
+			font-size: 30pt;
+		}
+		table,td,th{
+			border: 1pt solid black;
+			text-align: center;
+		}
+		div{
+			margin-left: 700px;
+			margin-top: 300px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<table id="nilai">
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>NIM</th>
+			<th>Nilai</th>
+			<th>Grade</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Eguh</td>
+			<td>134</td>
+			<td>73</td>
+			<td id="grade1"> </td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Fathan</td>
+			<td>137</td>
+			<td>78</td>
+			<td id="grade2"> </td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Rama</td>
+			<td>150</td>
+			<td>49</td>
+			<td id="grade3"> </td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Rafa</td>
+			<td>153</td>
+			<td>53</td>
+			<td id="grade4"> </td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Pricil</td>
+			<td>119</td>
+			<td>98</td>
+			<td id="grade5"> </td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Iko</td>
+			<td>13</td>
+			<td>33</td>
+			<td id="grade6"> </td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Faqih</td>
+			<td>132</td>
+			<td>93</td>
+			<td id="grade7"> </td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Rini</td>
+			<td>53</td>
+			<td>63</td>
+			<td id="grade8"> </td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Farid</td>
+			<td>93</td>
+			<td>32</td>
+			<td id="grade9"> </td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Intan</td>
+			<td>77</td>
+			<td>53</td>
+			<td id="grade0"> </td>
+		</tr>		
+
+	</table>
+	</div>
+	<script type="text/javascript">
+		function hero(x,y){
+			if(x>=80){
+				document.getElementById(y).innerHTML = "A";
+			}
+
+			else if (x>=70 && x<80) {
+				document.getElementById(y).innerHTML = "AB";
+			}
+
+			else if (x>=60 && x<70) {
+				document.getElementById(y).innerHTML = "B";
+			}
+
+			else if (x>=50 && x<60) {
+				document.getElementById(y).innerHTML = "BC";
+			}
+
+			else if (x>=40 && x<50) {
+				document.getElementById(y).innerHTML = "C";
+			}
+
+			else if (x>=10 && x<40) {
+				document.getElementById(y).innerHTML = "D";
+			}
+
+			else if (x<10) {
+				document.getElementById(y).innerHTML = "E";
+			}
+
+			else {
+				document.getElementById(y).innerHTML = "T";
+			}
+		}
+
+		var table = document.getElementById("nilai");
+
+		for(var t = 1; t < table.rows.length; t++){
+			var nilai = parseInt(table.rows[t].cells[3].innerHTML);
+
+			if (nilai == 73) {
+				var fungsi = hero(nilai, "grade1");
+			}
+			else if (nilai == 78) {
+				var fungsi = hero(nilai, "grade2");
+			}
+			else if (nilai == 49) {
+				var fungsi = hero(nilai, "grade3");
+			}
+			else if (nilai == 53) {
+				var fungsi = hero(nilai, "grade4");
+			}
+			else if (nilai == 98) {
+				var fungsi = hero(nilai, "grade5");
+			}
+			else if (nilai == 33) {
+				var fungsi = hero(nilai, "grade6");
+			}
+			else if (nilai == 93) {
+				var fungsi = hero(nilai, "grade7");
+			}
+			else if (nilai == 63) {
+				var fungsi = hero(nilai, "grade8");
+			}
+			else if (nilai == 32) {
+				var fungsi = hero(nilai, "grade9");
+			}
+			else if (nilai == 32) {
+				var fungsi = hero(nilai, "grade0");
+			}	
+		}
+	</script>
+	
+</body>
+</html>
