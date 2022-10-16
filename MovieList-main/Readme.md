@@ -1,5 +1,8 @@
 # UTS-PAM-RB
 
+Tubagus Dinda Maulid
+118140087
+
 A. Nama Aplikasi : Movie List
 
 B. Deskripsi aplikasi : Aplikasi Movie List merupakan aplikasi mobile app yang menampilkan data tentang film , database yang digunakan berasal dari API OMDB. Aplikasi ini akan menampilkan informasi film secara detail seperti, Sinopsis, Director, Writer, Cast, Genre, Language, Year, Released, ward, Runtime, dan Rated. sertta terdapat fitur search untuk mencari film dengan keyword.
